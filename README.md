@@ -70,7 +70,7 @@ Behavior:
 - Creates the database schema.
 - Does not load demo data.
 - Disables the H2 Console.
-- Uses `ddl-auto=validate`, so Hibernate validates the schema without creating it.
+- Uses `ddl-auto=validate`.
 
 Start PostgreSQL before running the application with the `prod` profile:
 
@@ -86,7 +86,11 @@ mvn spring-boot:run "-Dspring-boot.run.profiles=prod"
 
 ## Tests
 
-The regular test suite uses H2:
+Behavior:
+
+- Uses PostgreSQL TestContainer for integration tests.
+- Uses dev profile
+- Disables the H2 Console.
 
 ```powershell
 mvn test
