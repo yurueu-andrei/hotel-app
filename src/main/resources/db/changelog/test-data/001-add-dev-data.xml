@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+            http://www.liquibase.org/xml/ns/dbchangelog
+            https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="003-add-dev-hotels" author="andrei.yurueu1@gmail.com" context="dev">
+        <insert tableName="hotels">
+            <column name="name" value="DoubleTree by Hilton Minsk"/>
+            <column name="description" value="A modern city hotel with panoramic views over central Minsk."/>
+            <column name="brand" value="Hilton"/>
+            <column name="house_number" valueNumeric="9"/>
+            <column name="street" value="Pobediteley Avenue"/>
+            <column name="city" value="Minsk"/>
+            <column name="country" value="Belarus"/>
+            <column name="post_code" value="220004"/>
+            <column name="phone" value="+375 17 309-80-00"/>
+            <column name="email" value="doubletreeminsk.info@hilton.com"/>
+            <column name="check_in" valueDate="14:00:00"/>
+            <column name="check_out" valueDate="12:00:00"/>
+        </insert>
+
+        
+        <insert tableName="hotels">
+            <column name="name" value="Hotel Europe Minsk"/>
+            <column name="description" value="A historic luxury hotel in the heart of Minsk."/>
+            <column name="brand" value="Independent"/>
+            <column name="house_number" valueNumeric="28"/>
+            <column name="street" value="Internatsionalnaya Street"/>
+            <column name="city" value="Minsk"/>
+            <column name="country" value="Belarus"/>
+            <column name="post_code" value="220030"/>
+            <column name="phone" value="+375 17 229-83-33"/>
+            <column name="email" value="info@hoteleurope.by"/>
+            <column name="check_in" valueDate="14:00:00"/>
+            <column name="check_out" valueDate="12:00:00"/>
+        </insert>
+
+        
+        <insert tableName="hotels">
+            <column name="name" value="Beijing Hotel Minsk"/>
+            <column name="description" value="A five-star hotel surrounded by a landscaped park."/>
+            <column name="brand" value="Beijing Hotel"/>
+            <column name="house_number" valueNumeric="36"/>
+            <column name="street" value="Krasnoarmeyskaya Street"/>
+            <column name="city" value="Minsk"/>
+            <column name="country" value="Belarus"/>
+            <column name="post_code" value="220030"/>
+            <column name="phone" value="+375 17 329-77-77"/>
+            <column name="email" value="reservation@beijinghotelminsk.com"/>
+            <column name="check_in" valueDate="14:00:00"/>
+            <column name="check_out" valueDate="12:00:00"/>
+        </insert>
+
+        
+        <insert tableName="hotels">
+            <column name="name" value="Renaissance Minsk Hotel"/>
+            <column name="description" value="An upscale business hotel close to the city center."/>
+            <column name="brand" value="Marriott"/>
+            <column name="house_number" valueNumeric="1"/>
+            <column name="street" value="Dzerzhinskogo Avenue"/>
+            <column name="city" value="Minsk"/>
+            <column name="country" value="Belarus"/>
+            <column name="post_code" value="220036"/>
+            <column name="phone" value="+375 17 309-90-90"/>
+            <column name="email" value="info@renaissanceminsk.com"/>
+            <column name="check_in" valueDate="15:00:00"/>
+            <column name="check_out" valueDate="12:00:00"/>
+        </insert>
+
+        
+        <insert tableName="hotels">
+            <column name="name" value="Hampton by Hilton Brest"/>
+            <column name="description" value="A comfortable hotel near Brest city center and railway station."/>
+            <column name="brand" value="Hilton"/>
+            <column name="house_number" valueNumeric="2"/>
+            <column name="street" value="Warshavskoye Highway"/>
+            <column name="city" value="Brest"/>
+            <column name="country" value="Belarus"/>
+            <column name="post_code" value="224003"/>
+            <column name="phone" value="+375 16 220-50-00"/>
+            <column name="email" value="brest.info@hilton.com"/>
+            <column name="check_in" valueDate="14:00:00"/>
+            <column name="check_out" valueDate="12:00:00"/>
+        </insert>
+
+        
+        <insert tableName="hotels">
+            <column name="name" value="Hermitage Hotel Brest"/>
+            <column name="description" value="A boutique hotel within walking distance of Brest Fortress."/>
+            <column name="brand" value="Independent"/>
+            <column name="house_number" valueNumeric="7"/>
+            <column name="street" value="Chkalova Street"/>
+            <column name="city" value="Brest"/>
+            <column name="country" value="Belarus"/>
+            <column name="post_code" value="224005"/>
+            <column name="phone" value="+375 16 227-60-00"/>
+            <column name="email" value="booking@hermitage.by"/>
+            <column name="check_in" valueDate="14:00:00"/>
+            <column name="check_out" valueDate="12:00:00"/>
+        </insert>
+
+        
+        <insert tableName="hotels">
+            <column name="name" value="Atrium Hotel Mogilev"/>
+            <column name="description" value="A contemporary hotel in the commercial center of Mogilev."/>
+            <column name="brand" value="Atrium"/>
+            <column name="house_number" valueNumeric="22"/>
+            <column name="street" value="Pervomayskaya Street"/>
+            <column name="city" value="Mogilev"/>
+            <column name="country" value="Belarus"/>
+            <column name="post_code" value="212030"/>
+            <column name="phone" value="+375 22 260-60-60"/>
+            <column name="email" value="hotel@atrium.by"/>
+            <column name="check_in" valueDate="14:00:00"/>
+            <column name="check_out" valueDate="12:00:00"/>
+        </insert>
+
+        
+        <insert tableName="hotels">
+            <column name="name" value="Slavyanskaya Hotel Vitebsk"/>
+            <column name="description" value="A quiet hotel with convenient access to the historic center."/>
+            <column name="brand" value="Independent"/>
+            <column name="house_number" valueNumeric="1"/>
+            <column name="street" value="Luchesa Embankment"/>
+            <column name="city" value="Vitebsk"/>
+            <column name="country" value="Belarus"/>
+            <column name="post_code" value="210015"/>
+            <column name="phone" value="+375 21 247-70-00"/>
+            <column name="email" value="info@slavyanskaya.by"/>
+            <column name="check_in" valueDate="14:00:00"/>
+            <column name="check_out" valueDate="12:00:00"/>
+        </insert>
+
+        
+        <insert tableName="hotels">
+            <column name="name" value="Victoria Olimp Hotel"/>
+            <column name="description" value="A sports-oriented hotel near Minsk Arena."/>
+            <column name="brand" value="Victoria"/>
+            <column name="house_number" valueNumeric="103"/>
+            <column name="street" value="Pobediteley Avenue"/>
+            <column name="city" value="Minsk"/>
+            <column name="country" value="Belarus"/>
+            <column name="post_code" value="220020"/>
+            <column name="phone" value="+375 17 308-77-77"/>
+            <column name="email" value="olimp@hotel-victoria.by"/>
+            <column name="check_in" valueDate="14:00:00"/>
+            <column name="check_out" valueDate="12:00:00"/>
+        </insert>
+
+        
+        <insert tableName="hotels">
+            <column name="name" value="BonHotel Minsk"/>
+            <column name="description" value="A practical design hotel for business and leisure trips."/>
+            <column name="brand" value="BonHotel"/>
+            <column name="house_number" valueNumeric="2"/>
+            <column name="street" value="Pritytskogo Street"/>
+            <column name="city" value="Minsk"/>
+            <column name="country" value="Belarus"/>
+            <column name="post_code" value="220073"/>
+            <column name="phone" value="+375 17 389-73-89"/>
+            <column name="email" value="reservation@bonhotel.by"/>
+            <column name="check_in" valueDate="14:00:00"/>
+            <column name="check_out" valueDate="12:00:00"/>
+        </insert>
+
+        
+        <insert tableName="hotels">
+            <column name="name" value="Warsaw Marriott Hotel"/>
+            <column name="description" value="A landmark high-rise hotel in central Warsaw."/>
+            <column name="brand" value="Marriott"/>
+            <column name="house_number" valueNumeric="65"/>
+            <column name="street" value="Jerozolimskie Avenue"/>
+            <column name="city" value="Warsaw"/>
+            <column name="country" value="Poland"/>
+            <column name="post_code" value="00-697"/>
+            <column name="phone" value="+48 22 630-63-06"/>
+            <column name="email" value="warsaw@marriott.com"/>
+            <column name="check_in" valueDate="15:00:00"/>
+            <column name="check_out" valueDate="12:00:00"/>
+        </insert>
+
+        
+        <insert tableName="hotels">
+            <column name="name" value="Radisson Blu Hotel Lietuva"/>
+            <column name="description" value="A riverside hotel overlooking the old town of Vilnius."/>
+            <column name="brand" value="Radisson"/>
+            <column name="house_number" valueNumeric="20"/>
+            <column name="street" value="Konstitucijos Avenue"/>
+            <column name="city" value="Vilnius"/>
+            <column name="country" value="Lithuania"/>
+            <column name="post_code" value="LT-09308"/>
+            <column name="phone" value="+370 5 272-62-72"/>
+            <column name="email" value="info.lietuva@radissonblu.com"/>
+            <column name="check_in" valueDate="15:00:00"/>
+            <column name="check_out" valueDate="12:00:00"/>
+        </insert>
+
+        
+        <insert tableName="hotels">
+            <column name="name" value="Crowne Plaza Berlin City Centre"/>
+            <column name="description" value="A central Berlin hotel close to major shopping streets."/>
+            <column name="brand" value="IHG"/>
+            <column name="house_number" valueNumeric="10"/>
+            <column name="street" value="Nuernberger Street"/>
+            <column name="city" value="Berlin"/>
+            <column name="country" value="Germany"/>
+            <column name="post_code" value="10789"/>
+            <column name="phone" value="+49 30 210-070"/>
+            <column name="email" value="info@cp-berlin.com"/>
+            <column name="check_in" valueDate="15:00:00"/>
+            <column name="check_out" valueDate="12:00:00"/>
+        </insert>
+
+        <insert tableName="hotels">
+            <column name="name" value="Holiday Inn Krakow City Centre"/>
+            <column name="description" value="A city hotel near Krakow Market Square and the old town."/>
+            <column name="brand" value="IHG"/>
+            <column name="house_number" valueNumeric="5"/>
+            <column name="street" value="Wielopole Street"/>
+            <column name="city" value="Krakow"/>
+            <column name="country" value="Poland"/>
+            <column name="post_code" value="31-072"/>
+            <column name="phone" value="+48 12 619-00-00"/>
+            <column name="email" value="info@hik.krakow.pl"/>
+            <column name="check_in" valueDate="15:00:00"/>
+            <column name="check_out" valueDate="12:00:00"/>
+        </insert>
+
+        
+        <insert tableName="hotels">
+            <column name="name" value="Hyatt Regency Tbilisi"/>
+            <column name="description" value="A premium hotel with views of central Tbilisi."/>
+            <column name="brand" value="Hyatt"/>
+            <column name="house_number" valueNumeric="13"/>
+            <column name="street" value="Rustaveli Avenue"/>
+            <column name="city" value="Tbilisi"/>
+            <column name="country" value="Georgia"/>
+            <column name="post_code" value="0108"/>
+            <column name="phone" value="+995 32 277-12-34"/>
+            <column name="email" value="tbilisi.regency@hyatt.com"/>
+            <column name="check_in" valueDate="15:00:00"/>
+            <column name="check_out" valueDate="12:00:00"/>
+        </insert>
+
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="1"/>
+            <column name="amenity" value="Free parking"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="1"/>
+            <column name="amenity" value="Free WiFi"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="1"/>
+            <column name="amenity" value="Non-smoking rooms"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="1"/>
+            <column name="amenity" value="Concierge"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="1"/>
+            <column name="amenity" value="On-site restaurant"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="1"/>
+            <column name="amenity" value="Fitness center"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="1"/>
+            <column name="amenity" value="Pet-friendly rooms"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="1"/>
+            <column name="amenity" value="Room service"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="1"/>
+            <column name="amenity" value="Business center"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="1"/>
+            <column name="amenity" value="Meeting rooms"/>
+        </insert>
+
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="2"/>
+            <column name="amenity" value="Free WiFi"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="2"/>
+            <column name="amenity" value="Spa"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="2"/>
+            <column name="amenity" value="Swimming pool"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="2"/>
+            <column name="amenity" value="On-site restaurant"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="2"/>
+            <column name="amenity" value="Bar"/>
+        </insert>
+
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="3"/>
+            <column name="amenity" value="Free parking"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="3"/>
+            <column name="amenity" value="Free WiFi"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="3"/>
+            <column name="amenity" value="Spa"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="3"/>
+            <column name="amenity" value="Swimming pool"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="3"/>
+            <column name="amenity" value="Airport shuttle"/>
+        </insert>
+
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="4"/>
+            <column name="amenity" value="Free WiFi"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="4"/>
+            <column name="amenity" value="Fitness center"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="4"/>
+            <column name="amenity" value="Business center"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="4"/>
+            <column name="amenity" value="Meeting rooms"/>
+        </insert>
+
+        
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="4"/>
+            <column name="amenity" value="Accessible rooms"/>
+        </insert>
+
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="5"/>
+            <column name="amenity" value="Free parking"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="5"/>
+            <column name="amenity" value="Free WiFi"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="5"/>
+            <column name="amenity" value="Breakfast included"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="5"/>
+            <column name="amenity" value="Family rooms"/>
+        </insert>
+
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="6"/>
+            <column name="amenity" value="Free WiFi"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="6"/>
+            <column name="amenity" value="On-site restaurant"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="6"/>
+            <column name="amenity" value="Room service"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="6"/>
+            <column name="amenity" value="Bar"/>
+        </insert>
+
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="7"/>
+            <column name="amenity" value="Free parking"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="7"/>
+            <column name="amenity" value="Free WiFi"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="7"/>
+            <column name="amenity" value="EV charging"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="7"/>
+            <column name="amenity" value="Accessible rooms"/>
+        </insert>
+
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="8"/>
+            <column name="amenity" value="Free parking"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="8"/>
+            <column name="amenity" value="Free WiFi"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="8"/>
+            <column name="amenity" value="Family rooms"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="8"/>
+            <column name="amenity" value="Pet-friendly rooms"/>
+        </insert>
+
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="9"/>
+            <column name="amenity" value="Free parking"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="9"/>
+            <column name="amenity" value="Free WiFi"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="9"/>
+            <column name="amenity" value="Fitness center"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="9"/>
+            <column name="amenity" value="Spa"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="9"/>
+            <column name="amenity" value="Swimming pool"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="10"/>
+            <column name="amenity" value="Free parking"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="10"/>
+            <column name="amenity" value="Free WiFi"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="10"/>
+            <column name="amenity" value="Non-smoking rooms"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="10"/>
+            <column name="amenity" value="Breakfast included"/>
+        </insert>
+
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="11"/>
+            <column name="amenity" value="Free WiFi"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="11"/>
+            <column name="amenity" value="Concierge"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="11"/>
+            <column name="amenity" value="Fitness center"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="11"/>
+            <column name="amenity" value="Business center"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="11"/>
+            <column name="amenity" value="Meeting rooms"/>
+        </insert>
+
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="12"/>
+            <column name="amenity" value="Free WiFi"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="12"/>
+            <column name="amenity" value="On-site restaurant"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="12"/>
+            <column name="amenity" value="Fitness center"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="12"/>
+            <column name="amenity" value="Airport shuttle"/>
+        </insert>
+
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="13"/>
+            <column name="amenity" value="Free WiFi"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="13"/>
+            <column name="amenity" value="Swimming pool"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="13"/>
+            <column name="amenity" value="Pet-friendly rooms"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="13"/>
+            <column name="amenity" value="Bar"/>
+        </insert>
+
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="14"/>
+            <column name="amenity" value="Free WiFi"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="14"/>
+            <column name="amenity" value="Family rooms"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="14"/>
+            <column name="amenity" value="On-site restaurant"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="14"/>
+            <column name="amenity" value="Accessible rooms"/>
+        </insert>
+
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="15"/>
+            <column name="amenity" value="Free WiFi"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="15"/>
+            <column name="amenity" value="Concierge"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="15"/>
+            <column name="amenity" value="Spa"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="15"/>
+            <column name="amenity" value="Airport shuttle"/>
+        </insert>
+
+        <insert tableName="hotel_amenities">
+            <column name="hotel_id" valueNumeric="15"/>
+            <column name="amenity" value="Room service"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
+

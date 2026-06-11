@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hotels
+    username: hotels
+    password: 0a0e641b6d4a2a2f361fa409971723d941e13dfe3746ccf90d728d19d2fa1493
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    contexts: prod
+  h2:
+    console:
+      enabled: false

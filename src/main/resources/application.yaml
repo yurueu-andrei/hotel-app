@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: hotel-app
+  profiles:
+    default: dev
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+
+server:
+  port: 8092
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

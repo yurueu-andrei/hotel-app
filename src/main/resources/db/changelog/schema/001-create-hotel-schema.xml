@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+            http://www.liquibase.org/xml/ns/dbchangelog
+            https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="001-create-hotels" author="andrei.yurueu1@gmail.com">
+        <createTable tableName="hotels">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <column name="name" type="VARCHAR(200)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="description" type="VARCHAR(2000)"/>
+
+            <column name="brand" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="house_number" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="street" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="city" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="country" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="post_code" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="phone" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="email" type="VARCHAR(254)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="check_in" type="TIME">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="check_out" type="TIME"/>
+        </createTable>
+
+        <createIndex tableName="hotels" indexName="idx_hotels_name">
+            <column name="name"/>
+        </createIndex>
+
+        <createIndex tableName="hotels" indexName="idx_hotels_brand">
+            <column name="brand"/>
+        </createIndex>
+
+        <createIndex tableName="hotels" indexName="idx_hotels_city_country">
+            <column name="city"/>
+            <column name="country"/>
+        </createIndex>
+    </changeSet>
+
+    <changeSet id="002-create-hotel-amenities" author="andrei.yurueu1@gmail.com">
+        <createTable tableName="hotel_amenities">
+            <column name="hotel_id" type="BIGINT">
+                <constraints
+                        nullable="false"
+                        foreignKeyName="fk_hotel_amenities_hotel"
+                        references="hotels(id)"
+                        deleteCascade="true"/>
+            </column>
+
+            <column name="amenity" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addPrimaryKey
+                tableName="hotel_amenities"
+                columnNames="hotel_id, amenity"
+                constraintName="pk_hotel_amenities"/>
+
+        <createIndex tableName="hotel_amenities" indexName="idx_hotel_amenities_amenity">
+            <column name="amenity"/>
+        </createIndex>
+    </changeSet>
+</databaseChangeLog>
